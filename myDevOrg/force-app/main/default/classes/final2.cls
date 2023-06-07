@@ -19,7 +19,7 @@ public with sharing class final2 {
        List<Account> accountToUpdate = new List<Account>();
         for(id AccountID : allCasesMap.keySet()){
             //average days calculation:
-            Integer AvgCaseDays = allcasesDaysMap.get(AccountID)/allCasesMap.get(AccountID);
+            Decimal AvgCaseDays = allcasesDaysMap.get(AccountID)/allCasesMap.get(AccountID);
             accountToUpdate.add(new Account(id = AccountID,Avg_case_roslution__c=AvgCaseDays));
         }
         update accountToUpdate;

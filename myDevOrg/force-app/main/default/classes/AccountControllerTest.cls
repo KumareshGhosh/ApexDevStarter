@@ -25,7 +25,7 @@ public class AccountControllerTest {
         for(ID ids: accountTotaolCaseMap.keySet()){
         Decimal resolutionDays = accountTotaolCaseDaysMap.get(ids)/accountTotaolCaseMap.get(ids);
         // update account object
-        accountToUpdate.add(new Account(Id=ids, Avg_case_roslution__c= resolutionDays));
+        accountToUpdate.add(new Account(Id=ids,Avg_case_roslution__c= resolutionDays));
         }
         update accountToUpdate;
     }
